@@ -3,7 +3,13 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-    <title>SOBRE - DÉRIK BARCELLOS FAVORETTI</title>
+    <title>FETCH - Buscando dados Do Github</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -14,16 +20,6 @@
                 <div class="logo"> DÉRIK BARCELLOS FAVORETTI</div>
                 <div class="redes-sociais">
                     <ul>
-                 <!--   <li>
-                            <a href="">
-                                <img src="./img/rss.png" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./img/face.png" />
-                            </a>
-                        </li>-->
                         <li>
                             <a href="https://github.com/derikbf" target="_blank">
                                 <img src="./img/github.png" />
@@ -54,33 +50,48 @@
                     </li>
                 </ul>
             </div>
-         <!-- BUSCA     <div class="busca">
-                <input placeholder="Search Something" type="text" />
-            </div>-->
         </div>
     </main>
-    
-    <!-- LOGOS DE CLIENTES -->
+        <!-- TEXTO - DESCRIÇÃO - PROJETOS -->
     <div class="col-150 bloco-logos-projetos">
         <div class="content">
             <div class="">
                 <div class="card-body">
-                    <section>
-                        <h3><b>OLÁ! SEJA BEM-VINDO </b></h3>
-                        <p>Meu nome é Dérik. Sou Colatinense e moro em Vitória há mais de 10 anos. 
-                            Sou formado em Ciências Contábeis e Superior de Tecnologia em Redes de Computadores.
-                        </p> Possuo pós graduação em Gerenciamento de Projetos.</p>
-                            
-                            Atualmente trabalho com Projetos, na elaboração de relatóriospara Presidência/Diretoria. </p>
-                            Relatórios de resultados por área/linha/produto, KPIs, disponibilidade / alocação (fábrica de software), financeiro (faturamento), comissão, volumetria de chamados (OS), etc.
-                        </p>
-                            Para mais detalhes, fique á vontade e veja o meu Linkedin. 
-                        </p>
-                            Para conhecer mais os meus trabalhos práticos desenvolvidos estudando, veja o menu Projetos.
-                            
+                    <section class="flex-column-fetch">
+                        <h6>FETCH - BUSCANDO DADOS DO MEU USUÁRIO NO GITHUB</h6>
+                            <div id="github">
+                                <strong> Usuário:</strong>
+                                <div id="user"></div>
+                                <br />
+                                <strong> Nome:</strong>
+                                <div id="nome"></div>
+                                <br />
+                                <strong> Empresa:</strong>
+                                <div id="company"></div>
+                                <br />
+                                <strong> ID do Usuário:</strong>
+                                <div id="id"></div>
+                                <br />
+                                <strong> URL:</strong>
+                                <div id="url"></div>
+                                <br />
+                                <strong> BIO (descrição):</strong>
+                                <div id="bio"></div>
+                                <br />
+                                <strong> Seguidores:</strong>
+                                <div id="followers"></div>
+                                <br />
+                                <strong> Segue:</strong>
+                                <div id="following"></div>
+                                <br />
+                                <strong> Data de criação do GitHub:</strong>
+                                <div id="created_at"></div>
+                                <br />
+                            </div>
                     </section>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -88,21 +99,6 @@
     <footer>
         <div class="col-100 footer">
           <div class="content">
-              <!--   <div class="col-4">
-                    <h3><b>Texto 1 Rodapé</b></h3>
-                    <p>apps blog blogroll christmas cms coda concert daily design develop dialog drinks envato food fun
-                        gallery gift holiday icon illustration ipad iphone journal jquery label link marketing mobile
-                        motion music photo profession quotation recipes show sound strategy tv typography video</p>
-                </div>-->
-            <!--    <div class="col-4">
-                    <h3><b>Sobre (empresa)</b></h3>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised words which don't look even slightly
-                        believable.
-                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.
-                    </p>
-                </div>-->
                 <div class="col-4">
                     <h3><b>Contato</b></h3>
                     <p>
@@ -129,6 +125,7 @@
     <script type="text/javascript" src="./js/jquery-migrate.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script src="/js/fetch.js"></script>
 </body>
 
 </html>

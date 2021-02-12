@@ -3,7 +3,13 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
-    <title>SOBRE - DÉRIK BARCELLOS FAVORETTI</title>
+    <title>CÁLCULO IMC - ÍNDICE DE MASSA CORPORAL</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -14,16 +20,6 @@
                 <div class="logo"> DÉRIK BARCELLOS FAVORETTI</div>
                 <div class="redes-sociais">
                     <ul>
-                 <!--   <li>
-                            <a href="">
-                                <img src="./img/rss.png" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./img/face.png" />
-                            </a>
-                        </li>-->
                         <li>
                             <a href="https://github.com/derikbf" target="_blank">
                                 <img src="./img/github.png" />
@@ -54,33 +50,37 @@
                     </li>
                 </ul>
             </div>
-         <!-- BUSCA     <div class="busca">
-                <input placeholder="Search Something" type="text" />
-            </div>-->
         </div>
     </main>
-    
-    <!-- LOGOS DE CLIENTES -->
+        <!-- TEXTO - DESCRIÇÃO - PROJETOS -->
     <div class="col-150 bloco-logos-projetos">
         <div class="content">
             <div class="">
                 <div class="card-body">
-                    <section>
-                        <h3><b>OLÁ! SEJA BEM-VINDO </b></h3>
-                        <p>Meu nome é Dérik. Sou Colatinense e moro em Vitória há mais de 10 anos. 
-                            Sou formado em Ciências Contábeis e Superior de Tecnologia em Redes de Computadores.
-                        </p> Possuo pós graduação em Gerenciamento de Projetos.</p>
-                            
-                            Atualmente trabalho com Projetos, na elaboração de relatóriospara Presidência/Diretoria. </p>
-                            Relatórios de resultados por área/linha/produto, KPIs, disponibilidade / alocação (fábrica de software), financeiro (faturamento), comissão, volumetria de chamados (OS), etc.
-                        </p>
-                            Para mais detalhes, fique á vontade e veja o meu Linkedin. 
-                        </p>
-                            Para conhecer mais os meus trabalhos práticos desenvolvidos estudando, veja o menu Projetos.
-                            
-                    </section>
+                    <section class="flex-column-imc">
+                        <p></p>
+                        <p></p>
+                        <h5>IMC - ÍNDICE DE MASSA CORPORAL</h5>
+                        POR FAVOR - INFORME OS SEUS DADOS
+                        <p></p>
+                        <div id="button-green">
+                          Nome:
+                          <input type="text" id="textnam" value="" />
+                          <p></p>
+                          Peso:
+                          <input type="number" name="Peso" id="textpes" /> kg.
+                          <p></p>
+                          Altura: <input type="number" name="Altura" id="textalt" />
+                          metros. Ex: 1,72.
+                          <p></p>
+                          <button class="btn btn-outline-primary btn" onclick="imc()">CALCULAR IMC</button>
+                          <p></p>
+                        </div>
+                        <div id="resimc"></div>
+                     </section>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -88,21 +88,6 @@
     <footer>
         <div class="col-100 footer">
           <div class="content">
-              <!--   <div class="col-4">
-                    <h3><b>Texto 1 Rodapé</b></h3>
-                    <p>apps blog blogroll christmas cms coda concert daily design develop dialog drinks envato food fun
-                        gallery gift holiday icon illustration ipad iphone journal jquery label link marketing mobile
-                        motion music photo profession quotation recipes show sound strategy tv typography video</p>
-                </div>-->
-            <!--    <div class="col-4">
-                    <h3><b>Sobre (empresa)</b></h3>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised words which don't look even slightly
-                        believable.
-                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.
-                    </p>
-                </div>-->
                 <div class="col-4">
                     <h3><b>Contato</b></h3>
                     <p>
@@ -113,6 +98,7 @@
                     <p class="emailico">derikbl@gmail.com<p>
                     <p class="telefoneico">(27) 99718-0026<p>
                     <p> Telefone e Whatsapp</p>
+                                    
                 </div>
             </div>
         </div>
@@ -129,6 +115,7 @@
     <script type="text/javascript" src="./js/jquery-migrate.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script src="/js/imc.js"></script>
 </body>
 
 </html>

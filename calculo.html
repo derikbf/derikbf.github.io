@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <title>CÁCULOS E PORCENTAGENS - DÉRIK BARCELLOS FAVORETTI</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!-- MENU PRINCIPAL --> 
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo"> DÉRIK BARCELLOS FAVORETTI</div>
+                <div class="redes-sociais">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/derikbf" target="_blank">
+                                <img src="./img/github.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/derikbf/" target="_blank">
+                                <img src="./img/linkedin.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="projetos.html">PROJETOS</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+        <!-- TEXTO - DESCRIÇÃO - PROJETOS -->
+    <div class="col-150 bloco-logos-projetos">
+        <div class="content">
+            <div class="">
+                <div class="card-body">
+                    <section>
+                        
+                        <p></p>
+                        <div id="calculadora1">
+                        <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 1</strong> </p>
+                        <li>Quanto é <input type="text" id="textn1" size="03"/>
+                          <strong>%</strong> de <input type="text" id="textn2" size="03"/> ?
+                          <button type="button" class="btn btn-outline-primary btn-sm" onclick="calcular1()">CALCULAR</button>
+                          <div id="rescalc"> <strong> Resposta:</strong> </div> <br />
+                        </li>
+                                                  
+                        <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 2</strong> </p>
+                        <li> O valor de <input type="text" id="textn3" size="03" />
+                          <strong> é quantos % porcento</strong> de
+                          <input type="text" id="textn4" size="03" /> ? 
+                          <button type="button" class="btn btn-outline-primary btn-sm" onclick="calcular2()">CALCULAR</button>
+                        </li>
+                          
+                          <div id="rescalc2"><strong>Resposta:</strong></div>
+                          <br />
+                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 3</strong> </p>
+                          <li>Eu tenho um valor de
+                          <input type="text" id="textn5" size="03" /> que
+                          <strong>AUMENTOU</strong> para
+                          <input type="text" id="textn6" size="03" />
+                          Qual é o aumento percentual?
+                          <button  type="button" class="btn btn-outline-primary btn-sm"  onclick="calcular3()">CALCULAR</button>
+                        </li>
+                          
+                          <div id="rescalc3"><strong>Resposta:</strong></div>
+                          <br />
+                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 4</strong> </p>
+                          <li>
+                          Eu tenho um valor de <input type="text" id="textn7" size="03" /> que
+                          <strong>DIMINUIU</strong> para
+                          <input type="text" id="textn8" size="03" />
+                          Qual é a diminuição percentual?
+                          <button  type="button" class="btn btn-outline-primary btn-sm" onclick="calcular4()">CALCULAR</button>
+                          <br />
+                        </li>
+                          
+                          <div id="rescalc4"><strong>Resposta:</strong></div>
+                          <br />
+                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 5</strong> </p>
+                          <li>
+                          Eu tenho um valor de <input type="text" id="textn9" size="03" /> e quero
+                          <strong>AUMENTAR</strong>
+                          <input type="text" id="textn10" size="03" /><strong> %</strong>. Qual é
+                          o resultado?
+                          <button  type="button" class="btn btn-outline-primary btn-sm"  onclick="calcular5()">CALCULAR</button>
+                          <br />
+                        </li>
+                          
+                          <div id="rescalc5"><strong>Resposta:</strong></div>
+                          <br />
+                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 6</strong> </p>
+                        <li>
+                          Eu tenho um valor de <input type="text" id="textn11" size="03" /> e
+                          quero
+                          <strong>DIMINUIR</strong>
+                          <input type="text" id="textn12" size="03" /><strong> %</strong>. Qual é
+                          o resultado?
+                          <button  type="button" class="btn btn-outline-primary btn-sm"  onclick="calcular6()">CALCULAR</button>
+                          <br />
+                        </li>
+                        
+                        
+                        <div id="rescalc6"><strong>Resposta:</strong></div>
+                          <br />
+                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 7</strong> </p>
+                          <li>    Eu tenho um valor inicial que <strong>AUMENTOU</strong> em
+                          <input type="text" id="textn13" size="03" /> <strong> %</strong> e
+                          passou para <input type="text" id="textn14" size="03" /> Qual é o
+                          resultado?  <button  type="button" class="btn btn-outline-primary btn-sm" onclick="calcular7()">CALCULAR</button>
+                          <br /></li>
+             
+                          <div id="rescalc7"><strong>Resposta:</strong></div>
+                        </div>
+                      </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="col-100 footer">
+          <div class="content">
+                <div class="col-4">
+                    <h3><b>Contato</b></h3>
+                    <p>
+                    Atendimento em toda grande Vitória:
+                    Vitória, Serra, Cariacica, Viana e Vila Velha
+                    </p>
+                    <p class="local">Vitória - ES<p>
+                    <p class="emailico">derikbl@gmail.com<p>
+                    <p class="telefoneico">(27) 99718-0026<p>
+                    <p> Telefone e Whatsapp</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="col-100 footer-2">
+        <div class="content">
+        <!-- DIREITOS -->
+            <p>
+                DÉRIK BARCELLOS FAVORETTI
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script src="/js/calculos.js"></script>
+</body>
+
+</html>
