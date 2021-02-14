@@ -9,11 +9,11 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+        </script>
 </head>
 
 <body>
-    <!-- MENU PRINCIPAL --> 
+    <!-- MENU PRINCIPAL -->
     <header class="menu-principal">
         <main>
             <div class="header-1">
@@ -52,92 +52,95 @@
             </div>
         </div>
     </main>
-        <!-- TEXTO - DESCRIÇÃO - PROJETOS -->
+    <!-- TEXTO - DESCRIÇÃO - PROJETOS -->
     <div class="col-150 bloco-logos-projetos">
         <div class="content">
-            <div class="">
-                <div class="card-body">
-                    <section>
-                        
-                        <p></p>
-                        <div id="calculadora1">
-                        <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 1</strong> </p>
-                        <li>Quanto é <input type="text" id="textn1" size="03"/>
-                          <strong>%</strong> de <input type="text" id="textn2" size="03"/> ?
-                          <button type="button" class="btn btn-outline-primary btn-sm" onclick="calcular1()">CALCULAR</button>
-                          <div id="rescalc"> <strong> Resposta:</strong> </div> <br />
-                        </li>
-                                                  
-                        <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 2</strong> </p>
-                        <li> O valor de <input type="text" id="textn3" size="03" />
-                          <strong> é quantos % porcento</strong> de
-                          <input type="text" id="textn4" size="03" /> ? 
-                          <button type="button" class="btn btn-outline-primary btn-sm" onclick="calcular2()">CALCULAR</button>
-                        </li>
-                          
-                          <div id="rescalc2"><strong>Resposta:</strong></div>
-                          <br />
-                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 3</strong> </p>
-                          <li>Eu tenho um valor de
-                          <input type="text" id="textn5" size="03" /> que
-                          <strong>AUMENTOU</strong> para
-                          <input type="text" id="textn6" size="03" />
-                          Qual é o aumento percentual?
-                          <button  type="button" class="btn btn-outline-primary btn-sm"  onclick="calcular3()">CALCULAR</button>
-                        </li>
-                          
-                          <div id="rescalc3"><strong>Resposta:</strong></div>
-                          <br />
-                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 4</strong> </p>
-                          <li>
-                          Eu tenho um valor de <input type="text" id="textn7" size="03" /> que
-                          <strong>DIMINUIU</strong> para
-                          <input type="text" id="textn8" size="03" />
-                          Qual é a diminuição percentual?
-                          <button  type="button" class="btn btn-outline-primary btn-sm" onclick="calcular4()">CALCULAR</button>
-                          <br />
-                        </li>
-                          
-                          <div id="rescalc4"><strong>Resposta:</strong></div>
-                          <br />
-                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 5</strong> </p>
-                          <li>
-                          Eu tenho um valor de <input type="text" id="textn9" size="03" /> e quero
-                          <strong>AUMENTAR</strong>
-                          <input type="text" id="textn10" size="03" /><strong> %</strong>. Qual é
-                          o resultado?
-                          <button  type="button" class="btn btn-outline-primary btn-sm"  onclick="calcular5()">CALCULAR</button>
-                          <br />
-                        </li>
-                          
-                          <div id="rescalc5"><strong>Resposta:</strong></div>
-                          <br />
-                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 6</strong> </p>
-                        <li>
-                          Eu tenho um valor de <input type="text" id="textn11" size="03" /> e
-                          quero
-                          <strong>DIMINUIR</strong>
-                          <input type="text" id="textn12" size="03" /><strong> %</strong>. Qual é
-                          o resultado?
-                          <button  type="button" class="btn btn-outline-primary btn-sm"  onclick="calcular6()">CALCULAR</button>
-                          <br />
-                        </li>
-                        
-                        
-                        <div id="rescalc6"><strong>Resposta:</strong></div>
-                          <br />
-                          <p style="color:rgb(142, 142, 145)"> <strong>CALCULADORA 7</strong> </p>
-                          <li>    Eu tenho um valor inicial que <strong>AUMENTOU</strong> em
-                          <input type="text" id="textn13" size="03" /> <strong> %</strong> e
-                          passou para <input type="text" id="textn14" size="03" /> Qual é o
-                          resultado?  <button  type="button" class="btn btn-outline-primary btn-sm" onclick="calcular7()">CALCULAR</button>
-                          <br /></li>
-             
-                          <div id="rescalc7"><strong>Resposta:</strong></div>
-                        </div>
-                      </section>
-                </div>
-            </div>
+            <section>
+                <h3>CÁLCULOS E PORCENTAGENS</h3>
+                <p></p>
+                <form action="" id="calculo-1" class="form" method="POST">
+                    <h5>CÁLCULO 1</h5>
+                    <label for="num1">Quanto é </label>
+                    <input type="text" id="num1" name="num1"> % de
+                    <label for="num2"></label>
+                    <input type="text" id="num2" name="num2"> ?
+                    <button type="submit" class="btn btn-outline-primary btn-sm">CALCULE</button>
+                </form>
+                <p> </p>
+                <div id="resultado-calc1"></div>
+                <br>
+                <form action="" id="calculo-2" class="form2" method="POST">
+                    <h5>CÁLCULO 2</h5>
+                    <label for="num3">O valor de </label>
+                    <input type="text" id="num3" name="num3"> é quantos % de
+                    <label for="num4"></label>
+                    <input type="text" id="num4" name="num4"> ?
+                    <button type="submit" class="btn btn-outline-primary btn-sm">CALCULE</button>
+                </form>
+                <p></p>
+                <div id="resultado-calc2"></div>
+                <br>
+                <p></p>
+                <form action="" id="calculo-3" class="form3" method="POST">
+                    <h5>CÁLCULO 3</h5>
+                    <label for="num5">Eu tenho um valor de </label>
+                    <input type="text" id="num5" name="num5"> que <strong>AUMENTOU</strong> para
+                    <label for="num6"></label>
+                    <input type="text" id="num6" name="num6">. Qual é o <strong>aumento percentual? </strong>
+                    <button type="submit" class="btn btn-outline-primary btn-sm">CALCULE</button>
+                </form>
+                <p> </p>
+                <div id="resultado-calc3"></div>
+                <br>
+                <p></p>
+                <form action="" id="calculo-4" class="form4" method="POST">
+                    <h5>CÁLCULO 4</h5>
+                    <label for="num7">Eu tenho um valor de </label>
+                    <input type="text" id="num7" name="num7"> que <strong>DIMINUIU</strong> para
+                    <label for="num8"></label>
+                    <input type="text" id="num8" name="num8">. Qual é a <strong>diminuição percentual?</strong>
+                    <button type="submit" class="btn btn-outline-primary btn-sm">CALCULE</button>
+                </form>
+                <p> </p>
+                <div id="resultado-calc4"></div>
+                <br>
+                <p></p>
+                <form action="" id="calculo-5" class="form5" method="POST">
+                    <h5>CÁLCULO 5</h5>
+                    <label for="num9">Eu tenho um valor de </label>
+                    <input type="text" id="num9" name="num9"> e quero <strong>AUMENTAR</strong>
+                    <label for="num10"></label>
+                    <input type="text" id="num10" name="num10"> <strong>%</strong>. Qual é o resultado?
+                    <button type="submit" class="btn btn-outline-primary btn-sm">CALCULE</button>
+                </form>
+                <p> </p>
+                <div id="resultado-calc5"></div>
+                
+                <br>
+                <p></p>
+                <form action="" id="calculo-6" class="form6" method="POST">
+                    <h5>CÁLCULO 6</h5>
+                    <label for="num11">Eu tenho um valor de </label>
+                    <input type="text" id="num11" name="num11"> e quero <strong>DIMINUIR</strong>
+                    <label for="num12"></label>
+                    <input type="text" id="num12" name="num12"> <strong>%</strong>. Qual é o resultado?
+                    <button type="submit" class="btn btn-outline-primary btn-sm">CALCULE</button>
+                </form>
+                <p> </p>
+                <div id="resultado-calc6"></div>
+                <br>
+                <p></p>
+                <form action="" id="calculo-7" class="form7" method="POST">
+                    <h5>CÁLCULO 7</h5>
+                    <label for="num13">Eu tenho um valor inicial que <strong>AUMENTOU</strong> em </label>
+                    <input type="text" id="num13" name="num13"> % e passou para
+                    <label for="num14"></label>
+                    <input type="text" id="num14" name="num14">. Qual é o resultado?
+                    <button type="submit" class="btn btn-outline-primary btn-sm">CALCULE</button>
+                </form>
+                <p> </p>
+                <div id="resultado-calc7"></div>
+                <br>
 
         </div>
     </div>
@@ -145,16 +148,19 @@
     <!-- RODAPÉ -->
     <footer>
         <div class="col-100 footer">
-          <div class="content">
+            <div class="content">
                 <div class="col-4">
                     <h3><b>Contato</b></h3>
                     <p>
-                    Atendimento em toda grande Vitória:
-                    Vitória, Serra, Cariacica, Viana e Vila Velha
+                        Atendimento em toda grande Vitória:
+                        Vitória, Serra, Cariacica, Viana e Vila Velha
                     </p>
-                    <p class="local">Vitória - ES<p>
-                    <p class="emailico">derikbl@gmail.com<p>
-                    <p class="telefoneico">(27) 99718-0026<p>
+                    <p class="local">Vitória - ES
+                    <p>
+                    <p class="emailico">derikbl@gmail.com
+                    <p>
+                    <p class="telefoneico">(27) 99718-0026
+                    <p>
                     <p> Telefone e Whatsapp</p>
                 </div>
             </div>
@@ -162,7 +168,7 @@
     </footer>
     <div class="col-100 footer-2">
         <div class="content">
-        <!-- DIREITOS -->
+            <!-- DIREITOS -->
             <p>
                 DÉRIK BARCELLOS FAVORETTI
             </p>

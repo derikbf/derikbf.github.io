@@ -504,8 +504,78 @@ cursor: pointer;
     justify-content: left;
   }
 
-
-
-
 /* IMC - FIM */
-  
+
+
+.resultado-calc1 {
+  background-color: rgb(113, 226, 109);
+  padding: 10px 20px;
+}
+
+/* CALCULOS */
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#num1, #num2, #num3, #num4, 
+#num5, #num6, #num7, #num8, 
+#num9, #num10, #num11, #num12, 
+#num13, #num14 {
+  font-size: 20px;
+  text-align: center;
+  font: bold;
+  height: 40px;
+  width: 80px;
+  padding: 2px 2px;
+  background-color: rgb(214, 250, 233);
+}
+
+/*form input {
+  font-size: 20px;
+  text-align: center;
+  font: bold;
+  height: 40px;
+  width: 80px;
+  padding: 2px 2px;
+  background-color: rgb(214, 250, 233);
+} */
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 40px;
+  width: 90px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.paragrafo-resultado, .paragrafo-resultado-bad {
+  background-color: rgb(113, 226, 109);
+  padding: 10px 20px;
+  font-size: 18px;
+  font: bold;
+}
+
+.paragrafo-resultado-bad {
+  background-color: rgb(226, 156, 156);
+  font: bold;
+}
+
+
+
